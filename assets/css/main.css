@@ -4189,4 +4189,24 @@ body.is-preload #banner p {
     font-weight: bold; /* Make the text bold */
 	border-radius: 20px; /* Apvalina kampus */
 }
+/* CSS for two-column layout */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.image-gallery div {
+    flex: 1 1 calc(50% - 20px); /* Two columns with gap */
+}
+.image-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* CSS for single-column layout on mobile */
+@media (max-width: 600px) {
+    .image-gallery div {
+        flex: 1 1 100%; /* Single column */
+    }
+}
 
